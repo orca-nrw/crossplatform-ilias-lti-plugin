@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Ebene_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 44 44"
+   xml:space="preserve"
+   sodipodi:docname="icon_xorc.svg"
+   width="44"
+   height="44"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"><metadata
+   id="metadata31"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs29" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1711"
+   inkscape:window-height="1054"
+   id="namedview27"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:pagecheckerboard="false"
+   inkscape:zoom="2.8136646"
+   inkscape:cx="128.17501"
+   inkscape:cy="102.85935"
+   inkscape:window-x="1784"
+   inkscape:window-y="229"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Ebene_1" />
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#002B44;}
+	.st1{fill:#A90D00;}
+</style>
+<g
+   id="g24"
+   transform="matrix(0.20870885,0,0,0.20896657,-2.0641305,-2.112652)">
+	
+	
+	
+	
+	
+	<path
+   class="st0"
+   d="m 131.51,42.29 v 35.06 c 29.89,0 54.13,24.23 54.13,54.13 0,29.89 -24.23,54.13 -54.13,54.13 -29.9,0 -54.13,-24.24 -54.13,-54.13 H 42.33 c 0,49.26 39.93,89.19 89.19,89.19 49.26,0 89.19,-39.93 89.19,-89.19 0,-49.26 -39.94,-89.19 -89.2,-89.19"
+   id="path18"
+   inkscape:connector-curvature="0"
+   style="fill:#002b44" />
+	
+	<path
+   class="st1"
+   d="m 99.28,10.11 c -0.07,0 -0.13,0 -0.2,0 -49.26,0 -89.19,39.93 -89.19,89.19 h 35.06 c 0,-29.9 24.23,-54.13 54.13,-54.13 0.07,0 0.13,0 0.2,0 z"
+   id="path22"
+   inkscape:connector-curvature="0"
+   style="fill:#a90d00" />
+</g>
+</svg>

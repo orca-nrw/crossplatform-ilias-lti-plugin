@@ -1,0 +1,54 @@
+//
+// Copyright (c) ORCA.nrw
+// GPLv3, see LICENSE
+// 
+// English Language File for ORCAContent Plugin
+//
+
+<!-- language file start -->
+provider_url#:#ORCA-Provider URL
+provider_url_info#:#Internetadresse des ORCA-LTI-Providersystems z.B.: https://provider.orca.nrw/ltidir
+provider_username#:#Anmeldename
+provider_username_info#:#Anmeldename am Providersystem
+provider_pass#:#Passwort
+provider_pass_info#:#Passwort zur Anmeldung am Providersystem
+settings#:#Einstellungen
+config_saved#:#Die Einstellungen wurden gespeichert.
+obj_xorc#:#ORCA-Inhalt
+objs_xorc#:#ORCA-Inhalte
+no_passwd_found#:#Auf dem Providersystem konnte kein Passwort gefunden werden. Bitte wenden Sie sich an Ihren Administrator.
+no_launch_url_found#:#Auf dem Providersystem konnte kein Passwort für diese Komponente gefunden werden. Bitte wenden Sie sich an Ihren Administrator.
+no_tools_found#:#Auf dem Providersytem konnten keine Inhalte gefunden werden. Eventuell besteht ein Verbindungsproblem. Bitte wenden Sie sich an Ihren Administrator.
+no_cats_found#:#Auf dem Providersystem wurden keine Kategorien gefunden.
+choose_orca_tool#:#Hiermit können Sie auf einfache Weise frei nutzbare Inhalte (Open Educational Resources) aus ORCA hinzufügen. Die Ressourcen werden als LTI-Konsument in ILIAS automatisch angelegt. Nach dem Anlegen können Sie dort den Titel ändern, eine Beschreibung hinzufügen und bei Bedarf offline setzen. Wählen Sie nun den gewünschten Inhalt aus ORCA aus.
+choosed_content#:#gewählter Inhalt
+xorc_new#:#ORCA-Inhalt hinzufügen
+no_launch_url_found#:#keinen Inhalt ausgewählt
+permission_denied#:#Sie haben nicht die Rechte, hier einen LTI-Konsument anzulegen! Dies ist Voraussetzung um einen ORCA-Inhalt hinzufügen zu können.
+svg_icon#:#SVG-Icon für alle Größen
+big_icon#:#Großes Icon
+standard_icon#:#Standard-Icon
+tiny_icon#:#Kleines Icon
+modal_fullscreen_description#:#Choose an ORCA-Activity to embed.
+modal_close#:#Close ORCA-Tool
+orca_logo_alt#:#Logo ORCA.nrw
+website_url_orca#:#https://www.orca.nrw/
+orca_link_title#:#To ORCA.nrw
+categories#:#Categories
+contact#:#Contact us
+email_address_orca#:#support{'@'}orca.nrw
+send_support_request#:#E-mail a support request to ORCA.nrw
+input_search_id#:#incremental_search_courses
+input_search_placeholder#:#Search for content
+searching_in_all_categories#:#You are searching in all categories
+searching_in_category#:#You are searching in
+search_no_content_found#:#No results for
+no_search_no_content_found#:#No content found.
+expand_description#:#more
+collapse_description#:#close
+button_select#:#Select
+pagination_label#:#search result pages
+pagination_next#:#Next
+pagination_prev#:#Back
+error#:#An error has occurred. Your administrator can help you.
+open_category_menu#:#MENÜ
