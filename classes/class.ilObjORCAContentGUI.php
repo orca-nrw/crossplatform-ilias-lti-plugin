@@ -199,6 +199,12 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
             $toolid = -1;
         }
 
+        if (isset($a_values['toolurl']) && (int) $a_values['toolurl'] > 0) {
+            $toolurl = $a_values['toolurl'];
+        } else {
+            $toolurl = '';
+        }
+
         $item = new ilCustomInputGUI($this->txt('choosed_content'), 'toolselector');
         $item->setHtml($this->get_orcalti_spa_domstring($toolid));
         $item->setInfo($this->txt('choose_orca_tool'));
@@ -206,6 +212,10 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
 
         $item = new  ilHiddenInputGUI('TOOL_ID', 'TOOL_ID');
         $item->setValue($a_values['TOOL_ID']);
+        $this->form->addItem($item);
+
+        $item = new  ilHiddenInputGUI('toolurl', 'toolurl');
+        $item->setValue($a_values['toolurl']);
         $this->form->addItem($item);
 
         $this->form->addCommandButton("update", $this->lng->txt("save"));
@@ -224,10 +234,14 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
         global $DIC; /* ILIAS\DI\Container*/
 
         $id = trim($this->form->getInput("TOOL_ID"));
-        $provider_url = $this->get_orca_launch_url($id);
-        $provider_key = $this->get_orca_key($id);
-        $provider_secret = $this->get_orca_secret($id);
-        $description = $this->get_orca_description($id);
+        $toolurl = trim($this->form->getInput("toolurl"));
+
+        $getCourseObject = $this->get_orca_course($id, $toolurl);
+
+        $provider_url = ($getCourseObject) ? $getCourseObject->tool_url : '';
+        $provider_key = ($getCourseObject) ? $getCourseObject->key : '';
+        $provider_secret = ($getCourseObject) ? $getCourseObject->secret : '';
+
 
         $provId = ilObjORCAContent::getProviderIdByUrlKeySecret($provider_url,$provider_key,$provider_secret);
 
@@ -341,6 +355,8 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
             $orca_tool['category'] = $tool_data->category;
             $orca_tool['toolid'] = $tool_data->toolid;
             $orca_tool['description'] = $tool_data->description;
+            $orca_tool['url'] = $tool_data->tool_url;
+            $orca_tool['key'] = $tool_data->key;
             $orca_tools[] = $orca_tool;
         }
 
@@ -460,15 +476,25 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
      * @param  string tool_id
      * @return string secret
      */
-    public function get_orca_secret($tool_id)
+    public function get_orca_secret($tool_id, $toolurl)
     {
         global $ilErr;
-        $index = array_search((int)$tool_id, array_column($this->orcaTools, 'toolid'));
+        $secret = "";
 
-        if ($index !== FALSE) { // Check type-identity for index can be 0!!!
-            $secret = $this->orcaTools[$index]->secret;
+        $json = $this->orcaTools;
+        if ($json && $tool_id) {
+            $tools_data = json_decode($json);
+
+            $filteredItems = array_filter($tools_data, function($item, $k) use ($tool_id, $toolurl) {
+                return $item->toolid == $tool_id && $item->tool_url == $toolurl;
+              }, ARRAY_FILTER_USE_BOTH);
+
+            $item = ($filteredItems)? reset($filteredItems) : null;
+            $secret = ($item)? $item->secret : "";
+
         }
-        if ($index === FALSE || $secret == "") {
+
+        if ($secret == "") {
             $ilErr->raiseError($this->txt('no_passwd_found'), $ilErr->MESSAGE);
         }
         return $secret;
@@ -492,6 +518,28 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
             $key = "dummy";
         }
         return $key;
+    }
+
+    public function get_orca_course($tool_id, $toolurl)
+    {
+        global $ilErr;
+
+        $tools_data = $this->orcaTools;
+        $courseObject = "";
+
+        if ($tools_data && $tool_id) {
+            $filteredItems = array_filter($tools_data, function($item, $k) use ($tool_id, $toolurl) {
+                return $item->toolid == $tool_id && $item->tool_url == $toolurl;
+              }, ARRAY_FILTER_USE_BOTH);
+
+            $item = ($filteredItems)? reset($filteredItems) : null;
+            $courseObject = ($item)? $item : "";
+        }
+
+        if ($courseObject == "") {
+            $ilErr->raiseError($this->txt('no_course_found'), $ilErr->MESSAGE);
+        }
+        return $courseObject;
     }
 
 
