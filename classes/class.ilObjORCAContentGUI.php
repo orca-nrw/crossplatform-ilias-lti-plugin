@@ -241,7 +241,7 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
         $provider_url = ($getCourseObject) ? $getCourseObject->tool_url : '';
         $provider_key = ($getCourseObject) ? $getCourseObject->key : '';
         $provider_secret = ($getCourseObject) ? $getCourseObject->secret : '';
-
+        $description = ($getCourseObject && isset($getCourseObject->description)) ? $getCourseObject->description : '';
 
         $provId = ilObjORCAContent::getProviderIdByUrlKeySecret($provider_url,$provider_key,$provider_secret);
 
