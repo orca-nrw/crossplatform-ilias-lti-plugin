@@ -1,7 +1,7 @@
 <?php
 /**
- * Copyright (c) 2016 Institut fuer Lern-Innovation, Friedrich-Alexander-Universitaet Erlangen-Nuernberg
- * GPLv2, see LICENSE 
+ * Copyright (c) ORCA.nrw
+ * GPLv3, see LICENSE
  */
 
 /**
@@ -17,7 +17,7 @@ $id = "xorc";
  
 // code version; must be changed for all code changes
 define('xorc_version', '0.2.0');
-$version = 20220915;
+$version = 20221006;
  
 // ilias min and max version; must always reflect the versions that should
 // run with the plugin

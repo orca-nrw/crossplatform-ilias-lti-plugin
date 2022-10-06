@@ -39,6 +39,7 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
 
     /**
      * Get type.
+     * @return string
      */
     final function getType()
     {
@@ -50,9 +51,9 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
         return $this->object->getTitle();
     }
 
-
     /**
      * After object has been created -> jump to this command
+     * @return string
      */
     function getAfterCreationCmd()
     {
@@ -61,6 +62,7 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
 
     /**
      * Get standard command
+     * @return string
      */
     function getStandardCmd()
     {
@@ -129,7 +131,6 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
         global $rbacsystem, $ilErr;
 
         $this->setCreationMode(true);
-//        if (!$rbacsystem->checkAccess("create", $_GET["ref_id"], $this->type)) {
         if (!$rbacsystem->checkAccess("create", $_GET["ref_id"], 'lti')) {
             $ilErr->raiseError($this->txt("permission_denied"), $ilErr->MESSAGE);
         } else {

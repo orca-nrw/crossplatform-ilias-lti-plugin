@@ -52,3 +52,13 @@ pagination_next#:#Weiter
 pagination_prev#:#Zurück
 error#:#Ein Fehler ist aufgetreten. Ihr Administrator/in kann Ihnen weiter helfen.
 open_category_menu#:#MENÜ
+cat_create_xorc#:#ORCA-Inhalt anlegen als LTI-Konsument
+crs_create_xorc#:#ORCA-Inhalt anlegen als LTI-Konsument
+fold_create_xorc#:#ORCA-Inhalt anlegen als LTI-Konsument
+grp_create_xorc#:#ORCA-Inhalt anlegen als LTI-Konsument
+root_create_xorc#:#ORCA-Inhalt anlegen als LTI-Konsument
+xorc_visible#:#Anzeigen (nicht relevant, da LTI-Konsument angelegt wird)
+xorc_read#:#Lesezugriff (nicht relevant, da LTI-Konsument angelegt wird)
+xorc_write#:#Einstellungen bearbeiten (nicht relevant, da LTI-Konsument angelegt wird)
+xorc_delete#:#Löschen (nicht relevant, da LTI-Konsument angelegt wird)
+xorc_edit_permission#:#Rechteeinstellungen ändern (nicht relevant, da LTI-Konsument angelegt wird)
