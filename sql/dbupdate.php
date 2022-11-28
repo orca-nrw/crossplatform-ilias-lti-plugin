@@ -10,7 +10,7 @@
 
     $data = array(
         // \todo Hardcoded URL. Check at least...
-        array("xorc", "provider_url", "https://provider.preview.orca.nrw/ltidir"),
+        array("xorc", "provider_url", "https://provider.preview.orca.nrw/ltidir/"),
         array("xorc", "provider_username", ""),
         array("xorc", "provider_pass", "")
     );

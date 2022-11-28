@@ -16,8 +16,8 @@
 $id = "xorc";
  
 // code version; must be changed for all code changes
-define('xorc_version', '0.2.0');
-$version = 20221006;
+define('xorc_version', '0.3.0');
+$version = 20221128;
  
 // ilias min and max version; must always reflect the versions that should
 // run with the plugin
