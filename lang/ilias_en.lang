@@ -7,28 +7,28 @@
 
 <!-- language file start -->
 provider_url#:#ORCA-Provider URL
-provider_url_info#:#Internetadresse des ORCA-LTI-Providersystems z.B.: https://provider.orca.nrw/ltidir
-provider_username#:#Anmeldename
-provider_username_info#:#Anmeldename am Providersystem
-provider_pass#:#Passwort
-provider_pass_info#:#Passwort zur Anmeldung am Providersystem
-settings#:#Einstellungen
-config_saved#:#Die Einstellungen wurden gespeichert.
-obj_xorc#:#ORCA-Inhalt
-objs_xorc#:#ORCA-Inhalte
-no_passwd_found#:#Auf dem Providersystem konnte kein Passwort gefunden werden. Bitte wenden Sie sich an Ihren Administrator.
-no_launch_url_found#:#Auf dem Providersystem konnte kein Passwort für diese Komponente gefunden werden. Bitte wenden Sie sich an Ihren Administrator.
-no_tools_found#:#Auf dem Providersytem konnten keine Inhalte gefunden werden. Eventuell besteht ein Verbindungsproblem. Bitte wenden Sie sich an Ihren Administrator.
-no_cats_found#:#Auf dem Providersystem wurden keine Kategorien gefunden.
-choose_orca_tool#:#Hiermit können Sie auf einfache Weise frei nutzbare Inhalte (Open Educational Resources) aus ORCA hinzufügen. Die Ressourcen werden als LTI-Konsument in ILIAS automatisch angelegt. Nach dem Anlegen können Sie dort den Titel ändern, eine Beschreibung hinzufügen und bei Bedarf offline setzen. Wählen Sie nun den gewünschten Inhalt aus ORCA aus.
-choosed_content#:#gewählter Inhalt
-xorc_new#:#ORCA-Inhalt hinzufügen
-no_launch_url_found#:#keinen Inhalt ausgewählt
-permission_denied#:#Sie haben nicht die Rechte, hier einen LTI-Konsument anzulegen! Dies ist Voraussetzung um einen ORCA-Inhalt hinzufügen zu können.
-svg_icon#:#SVG-Icon für alle Größen
-big_icon#:#Großes Icon
-standard_icon#:#Standard-Icon
-tiny_icon#:#Kleines Icon
+provider_url_info#:#Internet address of the ORCA LTI provider system e.g.: https://provider.orca.nrw/ltidir
+provider_username#:#Login name
+provider_username_info#:#Login name at the provider system
+provider_pass#:#Password
+provider_pass_info#:#Password to log in to the provider system
+settings#:#Settings
+config_saved#:#The settings have been saved.
+obj_xorc#:#ORCA content
+objs_xorc#:#ORCA content
+no_passwd_found#:#No password could be found on the provider system. Please contact your administrator.
+no_launch_url_found#:#No password for this component could be found on the provider system. Please contact your administrator.
+no_tools_found#:#No content could be found on the provider system. There may be a connection problem. Please contact your administrator.
+no_cats_found#:#No categories were found on the provider system.
+choose_orca_tool#:#This allows you to easily add freely usable content (Open Educational Resources) from ORCA. The resources are automatically created as LTI consumers in ILIAS. After creation, you can change the title there, add a description and set it offline if required. Now select the desired content from ORCA.
+choosed_content#:#selected content
+xorc_new#:#Add ORCA content
+no_launch_url_found#:#no content selected
+permission_denied#:#You do not have the rights to create an LTI consumer object here! This is a prerequisite to be able to add an ORCA content.
+svg_icon#:#SVG icon for all sizes
+big_icon#:#Large icon
+standard_icon#:#Default icon
+tiny_icon#:#Small icon
 modal_fullscreen_description#:#Choose an ORCA-Activity to embed.
 modal_close#:#Close ORCA-Tool
 orca_logo_alt#:#Logo ORCA.nrw
@@ -51,4 +51,14 @@ pagination_label#:#search result pages
 pagination_next#:#Next
 pagination_prev#:#Back
 error#:#An error has occurred. Your administrator can help you.
-open_category_menu#:#MENÜ
+open_category_menu#:#MENU
+cat_create_xorc#:#Create ORCA Content as LTI Consumer
+crs_create_xorc#:#Create ORCA Content as LTI Consumer
+fold_create_xorc#:#Create ORCA Content as LTI Consumer
+grp_create_xorc#:#Create ORCA Content as LTI Consumer
+root_create_xorc#:#Create ORCA Content as LTI Consumer
+xorc_visible#:#Visible (not relevant because LTI Consumer is created)
+xorc_read#:#Read (not relevant because LTI Consumer is created)
+xorc_write#:#Edit Settings (not relevant because LTI Consumer is created)
+xorc_delete#:#Delete (not relevant because LTI Consumer is created)
+xorc_edit_permission#:#Change Permissions (not relevant because LTI Consumer is created)
