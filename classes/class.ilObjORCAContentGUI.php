@@ -610,7 +610,7 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
                type="text" 
                id="TOOL_NAME" 
                maxlength="200" 
-               style="width: 60%; display: inline;" 
+               style="margin-bottom:10px; width: 60%; display: inline;" 
                name="TOOL_NAME" 
                value="' . $this->get_orca_name($toolid) . '"
                readonly>
