@@ -212,11 +212,21 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
         $this->form->addItem($item);
 
         $item = new  ilHiddenInputGUI('TOOL_ID', 'TOOL_ID');
-        $item->setValue($a_values['TOOL_ID']);
+        if(!empty($a_values) && isset($a_values['TOOL_ID'])) {
+            $item->setValue($a_values['TOOL_ID']);
+        }
+        $this->form->addItem($item);
+
+        $item = new  ilHiddenInputGUI('KEY', 'KEY');
+        if(!empty($a_values) && isset($a_values['KEY'])) {
+            $item->setValue($a_values['KEY']);
+        }
         $this->form->addItem($item);
 
         $item = new  ilHiddenInputGUI('toolurl', 'toolurl');
-        $item->setValue($a_values['toolurl']);
+        if(!empty($a_values) && isset($a_values['toolurl'])) {
+            $item->setValue($a_values['toolurl']);
+        }
         $this->form->addItem($item);
 
         $this->form->addCommandButton("update", $this->lng->txt("save"));
