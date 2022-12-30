@@ -40,4 +40,5 @@ Usage
 
 Version History
 ===============
-- 28.11.2022 - pre-release (in the `main` branch)
+- 28.11.2022 - 0.3.0 - pre-release (in the `main` branch)
+- 31.12.2022 - 1.0.0 - first release (in the `main` branch)
