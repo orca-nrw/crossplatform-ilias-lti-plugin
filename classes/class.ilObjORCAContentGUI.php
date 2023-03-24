@@ -294,6 +294,13 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
         $DIC->ctrl()->returnToParent($this);
     }
 
+    function endsWith($FullStr, $needle)
+    {
+        $StrLen = strlen($needle);
+        $FullStrEnd = substr($FullStr, strlen($FullStr) - $StrLen);
+        return $FullStrEnd == $needle;
+    }
+
 
 
     /**
@@ -316,7 +323,11 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
         $config_url = $this->config->getProviderUrl();
         if (!$config_url) {
             // \todo Hardcoded ORCA-URL here. Check if correct at least...
-            $config_url = "https://provider.orca.nrw/ltidir";
+            $config_url = "https://provider.orca.nrw/ltidir/";
+        }
+
+        if ($this->endsWith($path,'/') == false) {
+                $path = $path."/";
         }
 
         $auth = base64_encode("{$config_username}:{$config_passwort}");
@@ -330,7 +341,7 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
             ],
         ]);
         $orca_tools = array();
-        $json = @file_get_contents($config_url . "/shared", false, $context);
+        $json = @file_get_contents($config_url . "shared", false, $context);
         if (is_array($http_response_header)) {
             $head = ilORCAContentFunctions::parseHttpHeaders($http_response_header);
         }
@@ -346,6 +357,7 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
         }
     }
 
+   
 
     /**
      * Get the reduced data of orca tools as JSON.
