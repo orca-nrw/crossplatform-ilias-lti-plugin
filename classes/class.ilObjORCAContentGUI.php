@@ -294,11 +294,11 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
         $DIC->ctrl()->returnToParent($this);
     }
 
-    function endsWith($FullStr, $needle)
+    function endsWith($full_str, $needle)
     {
-        $StrLen = strlen($needle);
-        $FullStrEnd = substr($FullStr, strlen($FullStr) - $StrLen);
-        return $FullStrEnd == $needle;
+        $str_len = strlen($needle);
+        $full_str_end = substr($full_str, strlen($full_str) - $str_len);
+        return $full_str_end == $needle;
     }
 
 
@@ -356,8 +356,6 @@ class ilObjORCAContentGUI extends ilObjectPluginGUI
             return json_decode($json);
         }
     }
-
-   
 
     /**
      * Get the reduced data of orca tools as JSON.
